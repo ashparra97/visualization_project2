@@ -1,6 +1,6 @@
 // Create the data array for the plot
 // Test code
-d3.json("/api/budget.json").then((Budget_data) => {
+d3.json("api/budget.json").then((Budget_data) => {
 
     console.log(Budget_data);
 
