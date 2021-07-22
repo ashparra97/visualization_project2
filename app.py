@@ -43,7 +43,7 @@ def home():
 def budget():
     results = db.session.query(Budget.id, Budget.expenditures).all()
 
-#  Budget.actual_fy_18_19, Budget.adopted_fy_19_20, Budget.estimated_fy_19_20, Budget.adopted_fy_20_21
+# Budget.actual_fy_18_19, Budget.adopted_fy_19_20, Budget.estimated_fy_19_20, Budget.adopted_fy_20_21
     budget_id = [result[0] for result in results]
     budget_expenditures = [result[1] for result in results]
     # budget_actual_fy_18_19 = [result[2] for result in results]
