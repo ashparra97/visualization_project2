@@ -1,5 +1,5 @@
 # import necessary libraries
-from Models import create_classes
+from models import create_classes
 import os 
 from flask import (
     Flask,
@@ -39,7 +39,7 @@ def home():
 # @TODO: Route needed for each dataset
 # Example 1: Two column table
 @app.route("/api/budget.json")
-def watched():
+def budget():
     results = db.session.query(Budget.id, Budget.expenditures, Budget.actual_fy_18_19, Budget.adopted_fy_19_20, Budget.estimated_fy_19_20, Budget.adopted_fy_20_21).all()
 
     budget_id = [result[0] for result in results]
