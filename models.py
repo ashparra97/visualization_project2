@@ -13,21 +13,21 @@ def create_classes(db):
             return '<Budget %r>' % (self.name)
     return Budget
 
-    class Arrests(db.Model):
-        __tablename__ = 'arrests'
+    # class Arrests(db.Model):
+    #     __tablename__ = 'arrests'
 
-        id = db.Column(db.Integer, primary_key=True)
-        arrests_id = db.Column(db.String(255))
-        year = db.Column(db.Integer)
-        month = db.Column(db.String(255))
-        arrest_type = db.Column(db.String(255))
-        arrest_charge = db.Column(db.String(255))
-        ward = db.Column(db.String(255))
-        division = db.Column(db.String(255))
-        arrestee_race = db.Column(db.String(255))
-        arrestee_sex = db.Columb(db.String(255))
+    #     id = db.Column(db.Integer, primary_key=True)
+    #     arrests_id = db.Column(db.String(255))
+    #     year = db.Column(db.Integer)
+    #     month = db.Column(db.String(255))
+    #     arrest_type = db.Column(db.String(255))
+    #     arrest_charge = db.Column(db.String(255))
+    #     ward = db.Column(db.String(255))
+    #     division = db.Column(db.String(255))
+    #     arrestee_race = db.Column(db.String(255))
+    #     arrestee_sex = db.Columb(db.String(255))
 
-        def __repr__(self):
-            return '<Arrests %r>' % (self.name)
-    return Arrests  
+    #     def __repr__(self):
+    #         return '<Arrests %r>' % (self.name)
+    # return Arrests  
     
