@@ -93,7 +93,9 @@
        
         
         <!-- Import JS -->
-        <script src="app.js"></script>
+        <!-- script src="app.js"></script> -->
         <script src="api/budget.json"></script>
+        <script src="{{ url_for('static', filename='js/budget.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/app.js') }}"></script>
     </body>
 </html>
