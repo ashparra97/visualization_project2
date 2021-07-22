@@ -64,30 +64,32 @@ def budget():
 
 @app.route("/api/arrests.json")
 def arrests():
-    results = db.session.query(Arrests.id, Arrests.arrests_id, Arrests.year, Arrests.month, Arrests.arrest_type, Arrests.arrest_charge, Arrests.ward, Arrests.division, Arrests.arrestee_race, Arrests.arrestee_sex).all()
+    results = db.session.query(Arrests.id).all()
+
+# , Arrests.arrests_id, Arrests.year, Arrests.month, Arrests.arrest_type, Arrests.arrest_charge, Arrests.ward, Arrests.division, Arrests.arrestee_race, Arrests.arrestee_sex
 
     id = [result[0] for result in results]
-    arrests_id = [result[1] for result in results]
-    arrests_year = [result[2] for result in results]
-    arrests_month = [result[3] for result in results]
-    arrests_arrest_type = [result[4] for result in results]
-    arrests_arrest_charge = [result[5] for result in results]
-    arrests_ward = [result[6] for result in results]
-    arrests_division = [result[7] for result in results]
-    arrests_arrestee_race = [result[8] for result in results]
-    arrests_arrestee_sex = [result[9] for result in results]
+    # arrests_id = [result[1] for result in results]
+    # arrests_year = [result[2] for result in results]
+    # arrests_month = [result[3] for result in results]
+    # arrests_arrest_type = [result[4] for result in results]
+    # arrests_arrest_charge = [result[5] for result in results]
+    # arrests_ward = [result[6] for result in results]
+    # arrests_division = [result[7] for result in results]
+    # arrests_arrestee_race = [result[8] for result in results]
+    # arrests_arrestee_sex = [result[9] for result in results]
 
     arrests_data = [{
         "id": id,
-        "arrest id": arrests_id,
-        "arrest year": arrests_year,
-        "arrest month": arrests_month,
-        "arrest type": arrests_arrest_type,
-        "arrest charge": arrests_arrest_charge,
-        "ward": arrests_ward,
-        "division": arrests_division,
-        "arrestee_race": arrests_arrestee_race,
-        "arrestee sex": arrests_arrestee_sex
+        # "arrest id": arrests_id,
+        # "arrest year": arrests_year,
+        # "arrest month": arrests_month,
+        # "arrest type": arrests_arrest_type,
+        # "arrest charge": arrests_arrest_charge,
+        # "ward": arrests_ward,
+        # "division": arrests_division,
+        # "arrestee_race": arrests_arrestee_race,
+        # "arrestee sex": arrests_arrestee_sex
 
     }]
 
