@@ -18,7 +18,7 @@ def create_classes2(db):
         __tablename__ = 'arrests'
 
         id = db.Column(db.Integer, primary_key=True)
-        arrests_id = db.Column(db.String(255))
+        booking_id = db.Column(db.String(255))
         year = db.Column(db.Integer)
         month = db.Column(db.String(255))
         arrest_type = db.Column(db.String(255))
