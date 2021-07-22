@@ -44,10 +44,19 @@ def watched():
 
     budget_id = [result[0] for result in results]
     budget_expenditures = [result[1] for result in results]
+    budget_actual_fy_18_19 = [result[2] for result in results]
+    budget_adopted_fy_19_20 = [result[3] for result in results]
+    budget_estimated_fy_19_20 = [result[4] for result in results]
+    budget_adopted_fy_20_21 = [result[5] for result in results]
 
     Budget_data = [{
         "id": budget_id,
-        "expenditures": budget_expenditures
+        "expenditures": budget_expenditures,
+        "actual_fy_18_19": budget_actual_fy_18_19,
+        "adopted_fy_19_20": budget_adopted_fy_19_20,
+        "estimated_fy_19_20": budget_estimated_fy_19_20,
+        "adopted_fy_20_21": budget_adopted_fy_20_21
+
     }]
 
     return jsonify(Budget_data)
