@@ -24,6 +24,6 @@ d3.json("api/budget.json").then((Budget_data) => {
     };
 
     // Plot the chart to a div tag with id "bar-plot"
-    Plotly.newPlot("#bar-plot", data, layout);
+    Plotly.newPlot("bar-plot", data, layout);
 
 });
