@@ -6,7 +6,7 @@ d3.json("api/budget.json").then((Budget_data) => {
 
     var x = Budget_data[0].id
 
-    var y = Budget_data[0].expenditures
+    var y = Budget_data[0].actual_fy_18_19
 
     var trace = {
         x: x,
@@ -20,10 +20,10 @@ d3.json("api/budget.json").then((Budget_data) => {
     var layout = {
     title: "Budget Data",
     xaxis: { title: "ID" },
-    yaxis: { title: "Expenditures"}
+    yaxis: { title: "Actual Spending"}
     };
 
     // Plot the chart to a div tag with id "bar-plot"
-    Plotly.newPlot("bar-plot", data, layout);
+    Plotly.newPlot("#bar-plot", data, layout);
 
 });
