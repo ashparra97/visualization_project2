@@ -38,7 +38,6 @@
 
             <!-- Add in dropdown button with selections -->
             <div class="col-md-6">
-                <img src="{{ url_for('static', filename='tucsonpd.jpg') }}" alt="Tucson PD crime scene"/>
                 <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                       Select Year
@@ -52,9 +51,10 @@
                       <li><hr class="dropdown-divider"></li>
                     </ul>
                   </div>
+                  <img src="{{ url_for('static', filename='tucsonpd.jpg') }}" alt="Tucson PD crime scene"/>
             </div>
 
-            <!-- Add in manupulated chart 1 -->
+            <!-- Add in interactive chart 1 -->
             <div class="col-md-6">
                 <div id="flex-plot"></div>
 
