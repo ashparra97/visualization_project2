@@ -15,12 +15,11 @@ h3 {
     padding: 30px;
     position: center;
     object-fit: contain;
-
   }
 
 
   img {
     width: 50%;
     height: 50%; 
-    object-fit: contain;
+    position: center;
   }
