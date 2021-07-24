@@ -16,7 +16,7 @@
             crossorigin="anonymous"
         />
         <!-- Import CSS for style-->
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="stylesheet" href="../static/css/style.css">
     </head>
     
     <body>
@@ -94,8 +94,10 @@
         
         <!-- Import JS -->
         <!-- script src="app.js"></script> -->
-        <script src="api/budget.json"></script>
-        <script src="{{ url_for('static', filename='js/budget.js') }}"></script>
-        <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+        <script src="../data/budget.json"></script>
+        <script src="../data/arrests.json"></script>
+        <script src="../static/js/budget.js"></script>
+        <script src="../static/js/arrests_gender_years.js"></script>
+        <script src="../static/js/app.js"></script>
     </body>
 </html>
