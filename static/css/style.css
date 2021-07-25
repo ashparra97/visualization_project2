@@ -11,7 +11,7 @@ h3 {
     font-size: 20px;
   }
 
-  .dropdown {
+  .well {
     padding: 30px;
     position: center;
     object-fit: contain;
@@ -25,3 +25,5 @@ h3 {
     padding: 30px;
     object-fit: contain;
   }
+
+  
