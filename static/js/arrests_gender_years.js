@@ -120,7 +120,7 @@ d3.json("../data/arrests.json").then((response) => {
     };
 
     // Plot the chart to a div tag with id "bar-plot"
-    // Plotly.newPlot("bar-plot", data, layout);
+    Plotly.newPlot("other-plot", data, layout);
 
 });
 
