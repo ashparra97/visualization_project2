@@ -37,8 +37,16 @@
         <div class="row">
 
             <!-- Add in dropdown button with selections -->
-            <div class="col-md-4">
-                <div class="dropdown">
+                    <div class="col-md-4">
+                         <div class="well">
+                            <h5>Arrest Year:</h5>
+                            <select id="2019" onchange="optionChanged(this.value)">2019</select>
+                            <select id="2020" onchange="optionChanged(this.value)">2020</select>
+                            <select id="2021" onchange="optionChanged(this.value)">2021</select>
+                        </div>
+                    </div>
+            
+        <!--        <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                       Select Year
                     </button>
