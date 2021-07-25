@@ -43,7 +43,7 @@ d3.json("../data/budget.json").then((Budget_data) => {
     };
 
     // Plot the chart to a div tag with id "bar-plot"
-    Plotly.newPlot("bar-plot", data, layout);
+    // Plotly.newPlot("bar-plot", data, layout);
 
     // console.log(Budget_data[0].expenditures.length);
 });
