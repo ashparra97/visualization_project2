@@ -3,7 +3,7 @@
 // Update to live pathing when pushing
 d3.json("../data/budget.json").then((Budget_data) => {
 
-    console.log(Budget_data);
+    // console.log(Budget_data);
 
     var x = Budget_data[0].expenditures.slice(0, 4);
 
@@ -36,7 +36,7 @@ d3.json("../data/budget.json").then((Budget_data) => {
 
     // Define the plot layout
     var layout = {
-    title: "Tucson PD 2018 - 2021 Budget Data",
+    title: "Tucson PD 2019 - 2021 Budget Data",
     xaxis: { title: "Budget Categories" },
     yaxis: { title: "Department Spending (USD)"},
     barmode: 'group'
@@ -45,5 +45,5 @@ d3.json("../data/budget.json").then((Budget_data) => {
     // Plot the chart to a div tag with id "bar-plot"
     Plotly.newPlot("bar-plot", data, layout);
 
-    console.log(Budget_data[0].expenditures.length);
+    // console.log(Budget_data[0].expenditures.length);
 });
