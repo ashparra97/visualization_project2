@@ -98,6 +98,7 @@
         <script src="{{ url_for('static', filename='js/budget.js') }}"></script>
         <script src="{{ url_for('static', filename='js/arrests_gender_years.js') }}"></script>
         <script>
+            plot2019();
             function optionChanged(year){
                 if (year == 2019){
                     plot2019();

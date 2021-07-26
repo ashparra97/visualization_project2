@@ -111,7 +111,13 @@ function plot2019(){
             x: arrestMonths_19,
             y: arrestCounts_19,
             name: "2019 Number of Arrests",
-            type: "scatter"
+            type: "scatter",
+            marker: {
+                color: 'teal',
+                line: {
+                    color: 'teal'
+                }
+            }
         };
 
         var data = [trace1];
@@ -251,7 +257,13 @@ function plot2020(){
             x: arrestMonths_20,
             y: arrestCounts_20,
             name: "2020 Number of Arrests",
-            type: "scatter"
+            type: "scatter",
+            marker: {
+                color: 'teal',
+                line: {
+                    color: 'teal'
+                }
+            }
         };
 
         var data = [trace1];
@@ -388,7 +400,13 @@ function plot2021(){
             x: arrestMonths_21,
             y: arrestCounts_21,
             name: "2021 Number of Arrests",
-            type: "scatter"
+            type: "scatter",
+            marker: {
+                color: 'teal',
+                line: {
+                    color: 'teal'
+                }
+            }
         };
 
         var data = [trace1];
