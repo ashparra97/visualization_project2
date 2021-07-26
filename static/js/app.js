@@ -58,17 +58,17 @@ function plot2019(){
             arrestCounts_19.push(counts);
         };
         
-        // for (var i = 0; i < arrestMonths_19.length; i++){
-        //     arrestMonths_19.splice(i, 1, months[`${arrestMonths_19[i]}`]);
-        // };
-    
-        // TESTING
-        var arrests_by_months = {}; 
         for (var i = 0; i < arrestMonths_19.length; i++){
-            arrests_by_months[arrestMonths_19[i]] = arrestCounts_19[i];
+            arrestMonths_19.splice(i, 1, months[`${arrestMonths_19[i]}`]);
         };
-        console.log(arrests_by_months);
-        // TESTING ENDS
+    
+        // // TESTING
+        // var arrests_by_months = {}; 
+        // for (var i = 0; i < arrestMonths_19.length; i++){
+        //     arrests_by_months[arrestMonths_19[i]] = arrestCounts_19[i];
+        // };
+        // console.log(arrests_by_months);
+        // // TESTING ENDS
 
         // console.log(arrestMonths_19);
         // console.log(arrestCounts_19);
