@@ -15,21 +15,30 @@ d3.json("api/budget.json").then((Budget_data) => {
         x: x,
         y: y_18_19,
         name: "2018/19 Budget",
-        type: "bar"
+        type: "bar",
+        marker: {
+            color: 'teal'
+        }
     };
 
     var trace2 = {
         x: x,
         y: y_19_20,
         name: "2019/20 Budget",
-        type: "bar"
+        type: "bar",
+        marker: {
+            color: 'gray'
+        }
     };
 
     var trace3 = {
         x: x,
         y: y_20_21,
         name: "2020/21 Budget",
-        type: "bar"
+        type: "bar",
+        marker: {
+            color: 'gray-dark',
+        }
     };
 
     var data = [trace1, trace2, trace3];
