@@ -120,9 +120,7 @@ d3.json("api/arrests.json").then((response) => {
     // Define the plot layout
     var layout = {
         title: "Tucson PD 2019 - 2021 Arrest Data",
-        xaxis: { title: "Year",
-            tickmode = 'array',
-            tickvals = [2019, 2020, 2021]},
+        xaxis: { title: "Year"},
         yaxis: { title: "Number of Arrests"},
         barmode: 'stack'
     };
