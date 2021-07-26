@@ -76,6 +76,9 @@ function plot2019(){
             testing_C_19.push(arrests_by_months[i]);
         }
 
+        console.log(testing_19);
+        console.log(testing_C_19);
+
         var trace2 = {
             x: testing_19,
             y: testing_C_19,
