@@ -83,14 +83,14 @@ function plot2019(){
             .entries(arrest_by_years[2].values);
     
         // console.log(arrests_19)
-        for (var i = 0; i < arrests_20.length; i++){
-            arrestMonths_20 = arrests_20[i].key;
+        for (var i = 0; i < arrests_19.length; i++){
+            arrestMonths_19 = arrests_19[i].key;
             
             // Find month string from array and replace
-            converted_month = months.find(m => m.month_string == arrestMonths_20);
+            converted_month = months.find(m => m.month_string == arrestMonths_19);
             
             // Update Key to Numeric Month
-            arrests_20[i].key =  converted_month.month_int
+            arrests_19[i].key =  converted_month.month_int
         };
     
         var arrestCounts_19 = [];
