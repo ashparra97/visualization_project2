@@ -78,6 +78,7 @@ function plot2019(){
             testing_19.push(month);
             var counts = arrests_by_months[i];
             testing_C_19.push(counts);
+            console.log(arrests_by_months[i]);
         }
 
         console.log(testing_19);
