@@ -92,6 +92,9 @@ function plot2019(){
             // Update Key to Numeric Month
             arrests_19[i].key =  converted_month.month_int
         };
+
+        // Sort by Month
+        var sorted_arrest_19 = arrests_19.sort((a, b) => a.key - b.key);
     
         var arrestCounts_19 = [];
         var arrestMonths_19 = [];
