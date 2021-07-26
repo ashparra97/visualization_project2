@@ -99,14 +99,20 @@ d3.json("api/arrests.json").then((response) => {
         x: ["2019", "2020", "2021"],
         y: [arrestCounts_19[0], arrestCounts_20[0], arrestCounts_21[0]],
         name: "Male Arrestee",
-        type: "bar"
+        type: "bar",
+        marker: {
+            color: 'gray'
+        }
     };
 
     var trace_F = {
         x: ["2019", "2020", "2021"],
         y: [arrestCounts_19[1], arrestCounts_20[1], arrestCounts_21[1]],
         name: "Female Arrestee",
-        type: "bar"
+        type: "bar",
+        marker: {
+            color: 'teal'
+        }
     };
 
     var data = [trace_M, trace_F];
