@@ -121,8 +121,6 @@ d3.json("api/arrests.json").then((response) => {
     var layout = {
         title: "Tucson PD 2019 - 2021 Arrest Data",
         xaxis: { title: "Year" },
-            tickmode = 'array',
-            tickvals = [2019, 2020, 2021],
         yaxis: { title: "Number of Arrests"},
         barmode: 'stack'
     };
