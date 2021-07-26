@@ -69,8 +69,21 @@ function plot2019(){
         };
         console.log(arrests_by_months);
 
-        var testing_19 = [];
-        var testing_C_19 = [];
+        var testing_19 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11,12];
+        var testing_C_19 = [
+                            arrests_by_months[0],
+                            arrests_by_months[1],
+                            arrests_by_months[2],
+                            arrests_by_months[3],
+                            arrests_by_months[4],
+                            arrests_by_months[5],
+                            arrests_by_months[6],
+                            arrests_by_months[7],
+                            arrests_by_months[8],    
+                            arrests_by_months[9],
+                            arrests_by_months[10],
+                            arrests_by_months[11]
+                        ];
         for (var i = 0; i < arrests_by_months; i++){
             // testing_19.push(i + 1);
             // testing_C_19.push(arrests_by_months[i]);
