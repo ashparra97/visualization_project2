@@ -62,8 +62,18 @@ function plot2019(){
             arrestMonths_19.splice(i, 1, months[`${arrestMonths_19[i]}`]);
         };
     
-        // console.log(arrestMonths_19);
-        // console.log(arrestCounts_19);
+        console.log(arrestMonths_19);
+        console.log(arrestCounts_19);
+
+        // TESTING
+
+
+        // TESTING ENDS
+        var arrests_by_months = {};
+        for (var i = 0; i < arrestMonths_19.length; i++){
+            arrests_by_months[arrestMonths_19[i]] = arrestCounts_19[i];
+        };
+        console.log(arrests_by_months);
 
         // Plot graph
         var trace1 = {
