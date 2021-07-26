@@ -95,7 +95,7 @@ function plot2019(){
             type: "scatter"
         };
 
-        var data = [trace1];
+        var data = [trace2];
 
         // Define the plot layout
         var layout = {
