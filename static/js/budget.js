@@ -1,7 +1,7 @@
 // Create the data array for the plot
 // Test code with local pathing
 // Update to live pathing when pushing
-d3.json("../data/budget.json").then((Budget_data) => {
+d3.json("api/budget.json").then((Budget_data) => {
 
     // console.log(Budget_data);
 

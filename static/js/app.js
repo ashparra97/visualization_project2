@@ -1,5 +1,5 @@
 function plot2019(){
-    d3.json("../data/arrests.json").then((response) => {
+    d3.json("api/arrests.json").then((response) => {
 
         var months = {
             'January': 1,
@@ -92,7 +92,7 @@ function plot2019(){
 };
 
 function plot2020(){
-    d3.json("../data/arrests.json").then((response) => {
+    d3.json("api/arrests.json").then((response) => {
 
         var months = {
             'January': 1,
@@ -185,7 +185,7 @@ function plot2020(){
 };
 
 function plot2021(){
-    d3.json("../data/arrests.json").then((response) => {
+    d3.json("api/arrests.json").then((response) => {
 
         var months = {
             'January': 1,
