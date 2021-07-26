@@ -97,7 +97,6 @@ function plot2019(){
         // Plot the chart to a div tag with id "bar-plot"
         Plotly.newPlot("int-plot1", data, layout);
 
-        for 
     });
 };
 

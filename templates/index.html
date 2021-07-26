@@ -90,9 +90,9 @@
         <!-- script src="app.js"></script> -->
         <script src="api/budget.json"></script>
         <script src="api/arrests.json"></script>
+        <script src="{{ url_for('static', filename='js/app.js') }}"></script>
         <script src="{{ url_for('static', filename='js/budget.js') }}"></script>
         <script src="{{ url_for('static', filename='js/arrests_gender_years.js') }}"></script>
-        <script src="{{ url_for('static', filename='js/app.js') }}"></script>
         <script>
             function optionChanged(year){
                 if (year == 2019){
