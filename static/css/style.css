@@ -23,7 +23,7 @@ h3 {
     height: 120%; 
     position: center;
     padding: 30px;
-    object-fit: contain;
+    object-fit: fill;
   }
 
 
