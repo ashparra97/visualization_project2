@@ -66,8 +66,10 @@ d3.json("api/budget.json").then((Budget_data) => {
             ],
               type: 'bar',
               colors: {
-                pattern: ['teal', 'gray', 'gray-dark']
-              },
-            }
+                x[1]: 'teal'
+                x[2]: 'gray',
+                x[3]: 'gray-dark'
+                },
+            },
     });
 });
