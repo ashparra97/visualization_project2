@@ -93,6 +93,7 @@
         <script src="{{ url_for('static', filename='js/budget.js') }}"></script>
         <script src="{{ url_for('static', filename='js/arrests_gender_years.js') }}"></script>
         <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+		
         <script>
             function optionChanged(year){
                 if (year == 2019){
@@ -114,8 +115,8 @@
 			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
 		})();
 		</script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-		<script src="src/screenfull.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
+		<script src="{{ url_for('static', filename='js/screenfull.js') }}"></script>
 		<script>
 		$(function () {
 			$('#supported').text('Supported/allowed: ' + !!screenfull.isEnabled);
