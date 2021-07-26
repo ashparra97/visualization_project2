@@ -136,20 +136,56 @@ function plot2019(){
 function plot2020(){
     d3.json("api/arrests.json").then((response) => {
 
-        var months = {
-            'January': 1,
-            'February': 2,
-            'March': 3,
-            'April': 4,
-            'May': 5,
-            'June': 6,
-            'July': 7,
-            'August': 8,
-            'September': 9,
-            'October': 10,
-            'November': 11,
-            'December': 12
-        };
+        var months = [
+            {
+                "month_string": "January",
+                "month_int": 1
+            },
+            {
+                "month_string": "February",
+                "month_int": 2
+            },
+            {
+                "month_string": "March",
+                "month_int": 3
+            },
+            {
+                "month_string": "April",
+                "month_int": 4
+            },
+            {
+                "month_string": "May",
+                "month_int": 5
+            },
+            {
+                "month_string": "June",
+                "month_int": 6
+            },
+            {
+                "month_string": "July",
+                "month_int": 7
+            },
+            {
+                "month_string": "August",
+                "month_int": 8
+            },
+            {
+                "month_string": "September",
+                "month_int": 9
+            },
+            {
+                "month_string": "October",
+                "month_int": 10
+            },
+            {
+                "month_string": "November",
+                "month_int": 11
+            },
+            {
+                "month_string": "December",
+                "month_int": 12
+            }
+        ];
     
         // console.log(response);
         // Arrests by years
