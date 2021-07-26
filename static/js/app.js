@@ -1,20 +1,56 @@
 function plot2019(){
     d3.json("api/arrests.json").then((response) => {
 
-        var months = {
-            'January': 1,
-            'February': 2,
-            'March': 3,
-            'April': 4,
-            'May': 5,
-            'June': 6,
-            'July': 7,
-            'August': 8,
-            'September': 9,
-            'October': 10,
-            'November': 11,
-            'December': 12
-        };
+        var months = [
+            {
+                "month_string": "January",
+                "month_int": 1
+            },
+            {
+                "month_string": "February",
+                "month_int": 2
+            },
+            {
+                "month_string": "March",
+                "month_int": 3
+            },
+            {
+                "month_string": "April",
+                "month_int": 4
+            },
+            {
+                "month_string": "May",
+                "month_int": 5
+            },
+            {
+                "month_string": "June",
+                "month_int": 6
+            },
+            {
+                "month_string": "July",
+                "month_int": 7
+            },
+            {
+                "month_string": "August",
+                "month_int": 8
+            },
+            {
+                "month_string": "September",
+                "month_int": 9
+            },
+            {
+                "month_string": "October",
+                "month_int": 10
+            },
+            {
+                "month_string": "November",
+                "month_int": 11
+            },
+            {
+                "month_string": "December",
+                "month_int": 12
+            }
+        ];
     
         // console.log(response);
         // Arrests by years
@@ -47,6 +83,15 @@ function plot2019(){
             .entries(arrest_by_years[2].values);
     
         // console.log(arrests_19)
+        for (var i = 0; i < arrests_20.length; i++){
+            arrestMonths_20 = arrests_20[i].key;
+            
+            // Find month string from array and replace
+            converted_month = months.find(m => m.month_string == arrestMonths_20);
+            
+            // Update Key to Numeric Month
+            arrests_20[i].key =  converted_month.month_int
+        };
     
         var arrestCounts_19 = [];
         var arrestMonths_19 = [];
@@ -58,46 +103,46 @@ function plot2019(){
             arrestCounts_19.push(counts);
         };
         
-        for (var i = 0; i < arrestMonths_19.length; i++){
-            arrestMonths_19.splice(i, 1, months[`${arrestMonths_19[i]}`]);
-        };
+        // for (var i = 0; i < arrestMonths_19.length; i++){
+        //     arrestMonths_19.splice(i, 1, months[`${arrestMonths_19[i]}`]);
+        // };
     
-        // TESTING
-        var arrests_by_months = {}; 
-        for (var i = 0; i < arrestMonths_19.length; i++){
-            arrests_by_months[arrestMonths_19[i]] = arrestCounts_19[i];
-        };
-        console.log(arrests_by_months);
+        // // TESTING
+        // var arrests_by_months = {}; 
+        // for (var i = 0; i < arrestMonths_19.length; i++){
+        //     arrests_by_months[arrestMonths_19[i]] = arrestCounts_19[i];
+        // };
+        // console.log(arrests_by_months);
 
-        var testing_19 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11,12];
-        var testing_C_19 = [
-                            arrests_by_months[0],
-                            arrests_by_months[1],
-                            arrests_by_months[2],
-                            arrests_by_months[3],
-                            arrests_by_months[4],
-                            arrests_by_months[5],
-                            arrests_by_months[6],
-                            arrests_by_months[7],
-                            arrests_by_months[8],    
-                            arrests_by_months[9],
-                            arrests_by_months[10],
-                            arrests_by_months[11]
-                        ];
-        for (var j = 0; j < arrests_by_months; j++){
-            console.log(j);
-        };
+        // var testing_19 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11,12];
+        // var testing_C_19 = [
+        //                     arrests_by_months[0],
+        //                     arrests_by_months[1],
+        //                     arrests_by_months[2],
+        //                     arrests_by_months[3],
+        //                     arrests_by_months[4],
+        //                     arrests_by_months[5],
+        //                     arrests_by_months[6],
+        //                     arrests_by_months[7],
+        //                     arrests_by_months[8],    
+        //                     arrests_by_months[9],
+        //                     arrests_by_months[10],
+        //                     arrests_by_months[11]
+        //                 ];
+        // for (var j = 0; j < arrests_by_months; j++){
+        //     console.log(j);
+        // };
 
-        console.log(testing_19);
-        console.log(testing_C_19);
+        // console.log(testing_19);
+        // console.log(testing_C_19);
 
-        var trace2 = {
-            x: testing_19,
-            y: testing_C_19,
-            name: "2019 Number of Arrests",
-            type: "scatter"
-        };
-        // TESTING ENDS
+        // var trace2 = {
+        //     x: testing_19,
+        //     y: testing_C_19,
+        //     name: "2019 Number of Arrests",
+        //     type: "scatter"
+        // };
+        // // TESTING ENDS
 
         // console.log(arrestMonths_19);
         // console.log(arrestCounts_19);
@@ -110,7 +155,7 @@ function plot2019(){
             type: "scatter"
         };
 
-        var data = [trace2];
+        var data = [trace1];
 
         // Define the plot layout
         var layout = {
