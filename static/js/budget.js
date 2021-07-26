@@ -55,4 +55,16 @@ d3.json("api/budget.json").then((Budget_data) => {
     Plotly.newPlot("budget-plot", data, layout);
 
     // console.log(Budget_data[0].expenditures.length);
+    const chart = c3.generate({
+        bindto: '#bar-plot',
+        data: {
+            columns: [
+                [x[0], y_18_19[0],y_19_20[0],y_20_21[0]],
+                [x[1], y_18_19[1],y_19_20[1],y_20_21[1]],
+                [x[2], y_18_19[2],y_19_20[2],y_20_21[2]],
+                [x[3], y_18_19[3],y_19_20[3],y_20_21[3]],
+            ],
+              type: 'bar',
+            }
+    });
 });
