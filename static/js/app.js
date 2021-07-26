@@ -68,10 +68,24 @@ function plot2019(){
             arrests_by_months[arrestMonths_19[i]] = arrestCounts_19[i];
         };
         console.log(arrests_by_months);
+
+        var testing_19 = [];
+        var testing_C_19 = [];
+        for (var i = 0; i < arrests_by_months; i++){
+            testing_19.push(i + 1);
+            testing_C_19.push(arrests_by_months[i]);
+        }
+
+        var trace2 = {
+            x: testing_19,
+            y: testing_C_19,
+            name: "2019 Number of Arrests",
+            type: "scatter"
+        };
         // TESTING ENDS
 
-        console.log(arrestMonths_19);
-        console.log(arrestCounts_19);
+        // console.log(arrestMonths_19);
+        // console.log(arrestCounts_19);
 
         // Plot graph
         var trace1 = {
