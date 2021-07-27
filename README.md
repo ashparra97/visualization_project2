@@ -12,5 +12,7 @@ Our project is an analysis of Tucson PD’s publicly available data to explore w
 ### Source and Data
 | Data            | Source URL    |
 | --------------- | ------------- |
-| TPD Arrest Data | [Arrest Data]() |
-| Tucson Budget Report | [Budget PDF](https://www.tucsonaz.gov/files/budget/COT_Adopted_Budget_Fiscal_Year_2021_1_1.pdf.pdf) |
+| TPD Arrest Data | [Arrest Data](https://opendata.tucsonaz.gov/sense/app/9921059b-aafd-4435-8098-234adb896bca/sheet/4ecaf75a-efda-415d-b346-5c1ee25fa86c/state/analysis){:target="_blank"} |
+| Tucson Budget Report | [Budget PDF](https://www.tucsonaz.gov/files/budget/COT_Adopted_Budget_Fiscal_Year_2021_1_1.pdf.pdf){:target="_blank"} |
+
+
