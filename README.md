@@ -1,5 +1,5 @@
 # Visualization Project
-# Kimberly Norman | Ashley Patricia Parra | Kellen Quinn | Jason Wang
+## Kimberly Norman | Ashley Patricia Parra | Kellen Quinn | Jason Wang
 
 ### Project Summary
 As a result of ongoing social issues in the United States, many law enforcement agencies are redefining themselves and how they do “business”. Many of these agencies are doing this in response to social outrage and are proactively reflecting on the notion that changes to policing and day-to-day operations must be made. The most prevalent and widely covered belief is the movement to “Defund the Police.” While this is indeed a call for budgetary changes, it’s also a call for agencies to redefine the types of calls that officers go on and to self-evaluate whether or not the police are the best institution to respond to certain call types. 
