@@ -9,10 +9,13 @@ Another one of Tucson PD’s budgetary woes is that many officers are leaving th
 
 Our project is an analysis of Tucson PD’s publicly available data to explore whether or not the agency’s budgetary woes, manpower issues, and realignment of purpose have affected their day-to-day operations as far as: events (whether calls for service or officer initiated), arrests, use of force incidents, etc. To accomplish this, we will be providing visualizations that a user can explore. 
 
-### Source and Data
-| Data            | Source URL    |
+### Data and JS Library
+| Data or JS Library Name | Source URL    |
 | --------------- | ------------- |
-| TPD Arrest Data | [Arrest Data](https://opendata.tucsonaz.gov/sense/app/9921059b-aafd-4435-8098-234adb896bca/sheet/4ecaf75a-efda-415d-b346-5c1ee25fa86c/state/analysis){:target="_blank"} |
-| Tucson Budget Report | [Budget PDF](https://www.tucsonaz.gov/files/budget/COT_Adopted_Budget_Fiscal_Year_2021_1_1.pdf.pdf){:target="_blank"} |
+| TPD Arrest Data | [Arrest Data](https://opendata.tucsonaz.gov/sense/app/9921059b-aafd-4435-8098-234adb896bca/sheet/4ecaf75a-efda-415d-b346-5c1ee25fa86c/state/analysis)|
+| Tucson Budget Report | [Budget PDF](https://www.tucsonaz.gov/files/budget/COT_Adopted_Budget_Fiscal_Year_2021_1_1.pdf.pdf)|
+| C3.js | [C3.js Library](https://c3js.org/) |
+
+### Project Methods and Approach
 
 
