@@ -1,4 +1,5 @@
-## Visualization Project
+# Visualization Project
+# Kimberly Norman | Ashley Patricia Parra | Kellen Quinn | Jason Wang
 
 ### Project Summary
 As a result of ongoing social issues in the United States, many law enforcement agencies are redefining themselves and how they do “business”. Many of these agencies are doing this in response to social outrage and are proactively reflecting on the notion that changes to policing and day-to-day operations must be made. The most prevalent and widely covered belief is the movement to “Defund the Police.” While this is indeed a call for budgetary changes, it’s also a call for agencies to redefine the types of calls that officers go on and to self-evaluate whether or not the police are the best institution to respond to certain call types. 
@@ -17,5 +18,11 @@ Our project is an analysis of Tucson PD’s publicly available data to explore w
 | C3.js | [C3.js Library](https://c3js.org/) |
 
 ### Project Methods and Approach
+* For hosting and data storage, we utilized Heroku and its Postgres DB add-on.
+* For data cleansing we used Excel to quickly filter and eliminate any rows with null values.
+* For data transformation and loading, we used both pgAdmin and DBeaver to run SQL scripts that created table containers and imported our cleaned Excel csv files.
+* For graphing, we utilized D3.js, Plotly.js, and C3.js to create them.
+* For front end containers and design, we used Bootstrap and native CSS3 along with HTML5.
 
-
+### Conclusion
+Upon review, we were able to accomplish around 90% of what we set out to do. We were able to look at the budgetary data in comparison with the number of arrests from 2019 to 2021. We also looked at the breakdown of gender in the number of arrestees broken down by year. What we wished to accomplish was to look at arrestee demographics as well as number of calls in response to the budgetary and service cuts from TPD. Overall, we ran into many hurdles, but we accomplished most of what we wanted to see. For future builds, we hope that we can get a bigger data storage for all our data and able to implement the two graphs that we have to cut out in this interation.
