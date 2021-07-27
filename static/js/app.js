@@ -416,8 +416,8 @@ function plot2021(){
             title: "Tucson PD 2021 Arrest Data",
             xaxis: { title: "Month",
                     tickmode: 'array',
-                    tickval: arrestMonths_21,
-                    ticktext: ['January','February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']    
+                    tickval: [1, 2, 3, 4, 5, 6, 7],
+                    ticktext: ['January','February', 'March', 'April', 'May', 'June', 'July']    
             },
             yaxis: { title: "Number of Arrests"},
         };
