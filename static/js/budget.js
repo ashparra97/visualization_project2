@@ -65,6 +65,14 @@ d3.json("api/budget.json").then((Budget_data) => {
                 [x[3], y_18_19[3],y_19_20[3],y_20_21[3]],
             ],
               type: 'bar',
+            },
+        axis: {
+            x: {
+                label: "Year"
+            },
+            y: {
+                label: "Budget (USD)"
             }
+        }
     });
 });
